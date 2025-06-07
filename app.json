@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "CareClock",
+    "slug": "careclock",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+	"scheme": "careclock",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.careclock"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "fbf113aa-087c-4200-81b9-8e557de385c7"
+      }
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
