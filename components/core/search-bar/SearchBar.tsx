@@ -31,9 +31,9 @@ function SearchBar({ placeholder = "Buscar", value = '', data, onResults, filter
 	return (
 		<Container className="flex-row items-center px-3" >
 			<TextInput 
-				className="flex-1 focus:outline-none focus:border-0 text-minor-base font-bold" 
+				className="flex-1 text-black focus:outline-none focus:border-0 text-minor-base font-bold" 
 				value={query}
-				placeholderClassName="text-black-600"
+				placeholderClassName="text-black"
 				placeholder={placeholder}
 				onChangeText={setQuery}
 			/>

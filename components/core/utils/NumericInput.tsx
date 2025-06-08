@@ -22,7 +22,7 @@ function NumericInput({ value, onChange, maxValue, containerClassName, minValue 
 				<IconComponent name="CaretLeft" size={30} />
 			</Pressable>
 			<TextInput 
-				className="w-24 text-center text-black-600 items-center focus:outline-none focus:border-0"
+				className="w-24 text-center text-black items-center focus:outline-none focus:border-0"
 				value={value}
 				keyboardType="numeric"
 				onChangeText={text => {
