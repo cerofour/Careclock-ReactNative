@@ -3,7 +3,7 @@ import { useLayoutEffect } from "react";
 import { View } from "react-native";
 import IconButton from "../../../components/core/buttons/IconButton";
 import IconComponent from "../../../components/core/icons/IconComponent";
-import DaysBar from "../../../components/calendar/DaysBar";
+//import DaysBar from "../../../components/calendar/DaysBar";
 import TimeMedicationCard from "../../../components/calendar/TimeMedicationCard";
 
 function Calendar() {
@@ -28,7 +28,7 @@ function Calendar() {
 
 	return (
 		<View className="flex-1 bg-background p-4">
-			<DaysBar></DaysBar>
+			{/*<DaysBar></DaysBar>*/}
 			<TimeMedicationCard/>
 		</View>
 	);

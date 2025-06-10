@@ -1,5 +1,5 @@
-import { COLORS } from "./components/colors.js";
-import generateFontScale from "./components/core/utils/generateFontScale.js";
+import { COLORS } from "./src/components/colors.js";
+import generateFontScale from "./src/components/core/utils/generateFontScale.js";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
