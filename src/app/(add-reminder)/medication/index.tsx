@@ -4,10 +4,10 @@ import { useRouter } from "expo-router";
 import SearchBar from "../../../components/core/search-bar/SearchBar";
 import Container from "../../../components/core/utils/Container";
 import CustomButton from "../../../components/core/buttons/CustomButton";
+import { Medication } from "../../../components/types";
 
-
-type medication = {
-	id: string, 
+export type Medication1 = {
+	id: string,
 	name: string,
 	type: string
 }
@@ -79,7 +79,7 @@ function AddMedicalReminder() {
 			<Container className="flex-1 w-100" >
 				<FlatList 
 					data={results}
-					keyExtractor={((item: medication) => item.id)}
+					keyExtractor={((item: Medication1) => item.id)}
 					renderItem={({item}) => (
 						<CustomButton containerClassName="my-1" onPress={() => {
 							router.push({
@@ -87,7 +87,7 @@ function AddMedicalReminder() {
 								params: item
 							})
 						}}>
-							<Text>{item.name}, {item.type}</Text>
+							<Text>{item.name}</Text>
 						</CustomButton>
 					)}
 				>

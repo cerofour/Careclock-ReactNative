@@ -2,11 +2,20 @@ import { View, Text } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import IconComponent from "../../../components/core/icons/IconComponent";
 import CustomButton from "../../../components/core/buttons/CustomButton";
+import { useEffect } from "react";
+import { notificationService } from "../../../services/notificationService";
+import { Medication } from "../../../components/types";
 
 function ReminderSavedScreen() {
 	
 	const router = useRouter();
-	const params = useLocalSearchParams();
+	const params: Medication = useLocalSearchParams();
+
+	useEffect(() => {
+		params.fixed_time = [`${params.fixed_time}`, ""];
+		console.log(params);
+		notificationService.scheduleReminder(params);
+	}, []);
 
 	return (
 		<View className="flex-1 bg-background p-4">

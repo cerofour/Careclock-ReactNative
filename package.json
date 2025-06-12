@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@expo/metro-runtime": "~5.0.4",
+    "@react-native-async-storage/async-storage": "^2.2.0",
     "@react-native-community/datetimepicker": "^8.4.1",
     "@react-navigation/bottom-tabs": "^7.3.13",
     "@react-navigation/native": "^7.1.9",
@@ -18,6 +19,7 @@
     "expo": "~53.0.9",
     "expo-constants": "~17.1.6",
     "expo-linking": "~7.1.5",
+    "expo-notifications": "^0.31.3",
     "expo-router": "~5.0.7",
     "expo-status-bar": "~2.2.3",
     "nativewind": "^4.1.23",

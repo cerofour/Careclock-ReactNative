@@ -35,8 +35,6 @@ function DateTimeField({ mode, value, onChange, placeholder, className }: DateTi
 		if(selected) onChange(selected)
 	}
 
-
-
 	return (
 		<View className={`${className}`}>
 			<TouchableOpacity
@@ -53,12 +51,12 @@ function DateTimeField({ mode, value, onChange, placeholder, className }: DateTi
 
 			{show && (
 				<DateTimePicker
-				value={value || new Date()}
-				mode={mode}
-				is24Hour
-				display="default"
-				onChange={onChangeInternal}
-				
+					value={value || new Date()}
+					mode={mode}
+					is24Hour
+					display="default"
+					onChange={onChangeInternal}
+					minimumDate={new Date()}
 				/>
 			)}
 		</View>

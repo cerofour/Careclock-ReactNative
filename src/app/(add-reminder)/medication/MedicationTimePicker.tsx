@@ -7,7 +7,6 @@ import DateTimeField from "../../../components/core/utils/DateTimeFIeld";
 import CustomButton from "../../../components/core/buttons/CustomButton";
 import ProgressBar from "../../../components/core/bars/ProgressBar";
 
-
 function MedicationTimePicker() {
 
 	const [date, setDate] = useState(new Date());
@@ -38,7 +37,12 @@ function MedicationTimePicker() {
 			<CustomButton 
 				pressableClassName="mt-2 mx-2" 
 				containerClassName="w-100 h-100 items-center justify-center py-3 bg-primary rounded-full" 
-				onPress={() => router.push({pathname: 'medication/StockTracker', params: params})}
+				onPress={() => {
+					params.fixed_time = `${date.toLocaleDateString()} ${hour.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`,
+					router.push({
+						pathname: 'medication/StockTracker',
+						params: params
+					})}}
 			>
 				<Text className="text-minor-lg text-white font-bold">Continuar</Text>
 			</CustomButton>

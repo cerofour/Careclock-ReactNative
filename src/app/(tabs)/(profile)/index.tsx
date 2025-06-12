@@ -30,10 +30,10 @@ function Profile() {
 		<View className="flex-1 bg-background py-5 p-4">
 			<View className="items-center">
 				<Image
-					source={{uri: "https://dina.concytec.gob.pe/appDirectorioCTI/UploadFotoPath.do?tipo=visualizar_archivo&id_investigador=129585&ruta=/documents/docInvestigadores/129585/imagenes/Foto.jpg&content_type=image/jpeg"}}
+					source={{uri: "https://yt3.googleusercontent.com/ytc/AIdro_ktdDHlDIcHq7hxNcKYFxzn78MpuS5cb2PRRsaOmOFLwPea=s160-c-k-c0x00ffffff-no-rj"}}
 					className="w-48 h-48 rounded-full m-4"
 				/>
-				<Text className="text-minor-lg font-bold">Percy Javier Celis Bravo</Text>
+				<Text className="text-minor-lg font-bold">Jorge Martin Rodriguez Castro</Text>
 			</View>
 			<FamilyCard navigation={navigation}></FamilyCard>
 			

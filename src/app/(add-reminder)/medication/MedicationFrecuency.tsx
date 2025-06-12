@@ -27,7 +27,21 @@ function MedicationFrecuency() {
 				<CustomButton 
 					pressableClassName="mb-3 w-full"
 					containerClassName="px-8 py-3 mt-6"
-					onPress={() => {router.push({pathname: "medication/MedicationTimePicker", params: params})}}>
+					onPress={() => {router.push({pathname: "medication/MedicationTimePicker", params: {
+						id_medication_reminder: "7",
+						medication_name: params.name,
+						dosage_amount: "1",
+						interval_time: "24h",
+						fixed_time: [],
+						start_time: "22:00",
+						start_date: "2025-06-05",
+						end_date: "2025-06-20",
+						notes: "tomar antes de comer",
+						created_at: "2025-06-04",
+						update_at: "2025-06-05",
+						amount_medication: "15",
+						quantity_limit: "15",
+					}})}}>
 					<Text className="text-minor-xl font-bold">Una vez al día</Text>
 					<Text className="text-minor-lg">Elige la hora para tomar tu medicación.</Text>
 				</CustomButton>
