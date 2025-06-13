@@ -1,0 +1,52 @@
+[
+	{
+		"id": "1",
+		"name": "Aspirina",
+		"type": "Tabletas"
+	},
+	{
+		"id": "2",
+		"name": "Aspirina",
+		"type": "Inyecciones"
+	},
+	{
+		"id": "3",
+		"name": "Ibuprofeno",
+		"type": "Jarabe"
+	},
+	{
+		"id": "4",
+		"name": "Ibuprofeno",
+		"type": "Pastillas"
+	},
+	{
+		"id": "5",
+		"name": "Paracetamol",
+		"type": "Tabletas"
+	},
+	{
+		"id": "6",
+		"name": "Paracetamol",
+		"type": "Tabletas"
+	},
+	{
+		"id": "7",
+		"name": "Paracetamol",
+		"type": "Tabletas"
+	},
+	{
+		"id": "8",
+		"name": "Paracetamol",
+		"type": "Tabletas"
+	},
+	{
+		"id": "9",
+		"name": "Paracetamol",
+		"type": "Tabletas"
+	},
+	{
+		"id": "10",
+		"name": "Paracetamol",
+		"type": "Tabletas"
+	}
+]
